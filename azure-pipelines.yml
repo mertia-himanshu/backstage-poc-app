@@ -9,9 +9,17 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+# - task: Docker@2
+#   displayName: Build an image
+#   inputs:
+#     repository: backstage
+#     command: build
+#     Dockerfile: Dockerfile
+    
 - task: Docker@2
-  displayName: Build an image
+  displayName: Build and Push
   inputs:
+    command: buildAndPush
+    containerRegistry: backstagepp
     repository: backstage
-    command: build
-    Dockerfile: Dockerfile
+  

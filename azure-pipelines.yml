@@ -22,4 +22,6 @@ steps:
     command: buildAndPush
     containerRegistry: backstage-container-reg
     repository: backstage
+    tags: |
+          1.0.0
   

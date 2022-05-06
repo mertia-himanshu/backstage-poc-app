@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+  - bash: |
+      pwd
+      ls -ltr
   - task: Kubernetes@1
     displayName: kubectl apply using arguments
     inputs:

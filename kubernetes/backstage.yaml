@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: backstage
-          image: backstage:8
+          image: backstagepp.azurecr.io/backstage:8
           imagePullPolicy: IfNotPresent
           ports:
             - name: http

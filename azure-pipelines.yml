@@ -20,6 +20,6 @@ steps:
   displayName: Build and Push
   inputs:
     command: buildAndPush
-    containerRegistry: Azure-Container-Registry-SC
-    repository: backstagepp
+    containerRegistry: backstage-container-reg
+    repository: backstage
   

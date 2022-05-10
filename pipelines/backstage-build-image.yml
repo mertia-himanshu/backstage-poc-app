@@ -1,5 +1,11 @@
 trigger:
-  - main
+  branches:
+    include:
+    - main
+  paths:
+    exclude:
+    - kubernetes
+    - pipelines
 
 pool:
   vmImage: ubuntu-latest

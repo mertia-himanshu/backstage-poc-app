@@ -11,3 +11,18 @@ spec:
     - name: http
       port: 80
       targetPort: http
+
+#========================================
+#Following is the code we updated manually to run backstage on AKS using the guestbook example
+# apiVersion: v1
+# kind: Service
+# metadata:
+#   name: backstage
+#   labels:
+#     app: backstage
+# spec:
+#   type: NodePort
+#   ports:
+#   - port: 80
+#   selector:
+#     app: backstage
